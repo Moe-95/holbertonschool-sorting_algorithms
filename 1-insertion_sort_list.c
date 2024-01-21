@@ -8,13 +8,13 @@
  */
 void insertion_sort_list(listint_t **list)
 {
-if (list == NULL || *list == NULL || (*list)->next == NULL)
-return;
+
 
 listint_t *current, *temp;
 
 current = (*list)->next;
-
+if (list == NULL || *list == NULL || (*list)->next == NULL)
+return;
 while (current != NULL)
 {
 temp = current;
