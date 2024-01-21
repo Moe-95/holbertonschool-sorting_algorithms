@@ -14,10 +14,10 @@ quick_sort_rec(array, 0, size - 1, size);
 }
 
 /**
- * quick_sort_recursive - Recursive function to perform Quick sort
+ * quick_sort_rec - Recursive function to perform Quick sort
  * @array: The array to be sorted
- * @low: The low index of the partition
- * @high: The high index of the partition
+ * @lower: The low index of the partition
+ * @higher: The high index of the partition
  * @size: The size of the array
  */
 void quick_sort_rec(int *array, int lower, int higher, size_t size)
@@ -35,8 +35,8 @@ quick_sort_rec(array, l_p + 1, higher, size);
 /**
  * lomuto_partition - Lomuto partition scheme for Quick sort
  * @array: The array to be sorted
- * @low: The low index of the partition
- * @high: The high index of the partition
+ * @lower: The low index of the partition
+ * @higher: The high index of the partition
  * @size: The size of the array
  *
  * Return: The partition index
